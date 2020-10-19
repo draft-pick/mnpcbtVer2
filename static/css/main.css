@@ -6,7 +6,6 @@ body {
     font-family: "Quicksand", sans-serif;
     font-size: 62.5%;
     font-size: 10px;
-    background-color: brown;
 }
 
 .nav {
@@ -59,7 +58,7 @@ body {
     text-decoration: none;
     color: #000;
     line-height: 65px;
-    font-size: 2.4rem;
+    font-size: 1.6rem;
 }
 
 .nav div.main_list ul li a:hover {
