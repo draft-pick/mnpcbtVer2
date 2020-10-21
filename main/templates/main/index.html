@@ -27,10 +27,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-          <div class="row">
-              <div class="col-4 pl-0 pr-0"><img src="/media/icons/logo.png" alt=""></div>
-              <div class="col-8 pl-0 pr-0"><h4><a href="#intro" class="scrollto">MNPCBT.RU</a></h4></div>
-          </div>
+              <div class="svg-image mt--10"><a href="{% url 'home' %}"><img src="/media/icons/logo.svg" alt=""></a></div>
       </div>
 
       <nav id="nav-menu-container">
@@ -48,9 +45,9 @@
           <li><a href="#team">Это нужно знать!</a></li>
           <li><a href="#gallery">СМИ о нас</a></li>
           <li><a href="#gallery">Платные услуги</a></li>
-          <li class="btn btn-info"><a href="#"><i class="fab fa-facebook"></i></a></li>
-          <li class="btn btn-info"><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li class="btn btn-danger"><a href="#"><i class="fas fa-search"></i></a></li>
+          <li class="btn btn-facebook"><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li class="btn btn-instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li class="btn btn-search"><a href="#"><i class="fas fa-search"></i></a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -62,7 +59,7 @@
     <div class="row justify-content-center align-content-center h-100 text-center px-lg-5">
         <div class="col-12 col-lg-4">
             <div class="mm-area py-5">
-                <div class="title"><h3>Меню</h3></div>
+                <div class="title">Меню</div>
                 <div class="owl-carousel owl-theme" id="slider-mm">
 
                   <div class="card bg-gradient-cyan card-height align-items-center justify-content-center shadow-sm p-2 p-md-4 item">
@@ -70,7 +67,7 @@
                            <button class="btn btn-lg btn-danger btn-icon-only rounded-circle" type="button">
                                 <span class="btn-inner--icon"><img src="/media/icons/logo-mof.svg" alt=""></span>
                            </button>
-                           <div class="size-fnt text-white">Школа московского фтизиатра</div>
+                           <div class="size-fnt text-mm">Школа московского фтизиатра</div>
                       </a>
                   </div>
 
@@ -79,7 +76,7 @@
                            <button class="btn btn-lg btn-warning btn-icon-only rounded-circle" type="button">
                                 <span class="btn-inner--icon"><img src="/media/icons/coronavirus.svg" alt=""></span>
                            </button>
-                           <div class="size-fnt text-white">Специалистам COVID-19</div>
+                           <div class="size-fnt text-mm">Специалистам COVID-19</div>
                       </a>
                   </div>
 
@@ -88,7 +85,7 @@
                            <button class="btn btn-lg btn-info btn-icon-only rounded-circle" type="button">
                                 <span class="btn-inner--icon"><img src="/media/icons/management.svg" alt=""></span>
                            </button>
-                           <div class="size-fnt text-white">Руководство Центра</div>
+                           <div class="size-fnt text-mm">Руководство Центра</div>
                       </a>
                   </div>
 
@@ -130,10 +127,10 @@
             </div>
 
         <div class="col-12 col-lg-4 text-left">
-            Государственное бюджетное учреждение здравоохранения города Москвы "Московский научно-практический центр борьбы с туберкулезом
-            Департамента здравоохранения города Москвы"
+            <div class="text-white font-weight-bold">Государственное бюджетное учреждение здравоохранения города Москвы "Московский научно-практический центр борьбы с туберкулезом
+            Департамента здравоохранения города Москвы"</div>
             <hr>
-            The Moscow Research and Clinical Center for Tuberculosis Control of the Moscow Government Department of Health
+            <div class="text-white font-weight-bold text-right">The Moscow Research and Clinical Center for Tuberculosis Control of the Moscow Government Department of Health</div>
         </div>
         <div class="col-12 col-lg-4">test</div>
     </div>
@@ -141,13 +138,20 @@
 <div class="container mt--100">
     <div class="row">
         <div class="col-12 col-lg-4">
-            <div class="card shadow-lg">
-                test
+            <div class="card shadow-lg text-center font-weight-normal">
+                Боссы сине-бело-голубых последние 10 лет не скрывают того, что хотят добиться европейских побед самого высокого уровня. Из года в год на развитие клуба тратятся серьезные деньги, но они не позволяют «Зениту» сделать качественный скачок. Для того, чтобы питерцы утеряли золото во внутреннем первенстве, должно случиться настоящие чудо. Гонку вооружений внутри страны Петербург выигрывает с большим отрывом. Но разве только ради побед в РПЛ «Зенит» тратит десятки миллионов евро?
+
+Покупка Малкома и Вендела за 60 миллионов евро в сумме, приглашение действующего вице-чемпиона мира Деяна Ловрена, приобретения Дугласа Сантоса и Вильмара Барриоса — ничего из этого не дало питерцам прорыва в Европе. Раз за разом сине-бело-голубая армия, собранная и готовящаяся именно к западному походу, терпит поражения на полях сражений в ЛЧ. Похоже, в этом сезоне ситуация опять не поменяется.
+
+Уровень противостояния внутри России не позволяет «Зениту» прогрессировать. В каждом еврокубковом матче разница в классе между нашими и не нашими отчетливо видна. Покупка европейских звезд второго порядка, перспективных латиноамериканцев и мало-мальски перспективных россиян ничего не дает. Так не пора ли клубам РПЛ стать донорами для Европы — учиться продавать и зарабатывать, а не покупать и тратить?
+
+Как мне кажется, «Зениту» пора прекращать неоправданные траты. Лучшего времени для смены курса и позиционирования себя в глазах общества трудно придумать. Если продолжить жить по-старому, в будущем сломать систему будет сложнее.
             </div>
         </div>
         <div class="col-12 col-lg-4">
-            <div class="card shadow-lg">
-                test
+            <div class="card shadow-lg text-center font-weight-normal">
+                <h4 class="text-warning text-uppercase text-shadow">Режим работы</h4>
+                <span class="badge badge-pill badge-warning text-uppercase text-white text-shadow"><h4>Круглосуточно (Стационар)</h4></span>
             </div>
         </div>
         <div class="col-12 col-lg-4">
