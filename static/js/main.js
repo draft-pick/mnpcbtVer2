@@ -129,7 +129,7 @@ $(document).ready(function(){
   $('#slider-mm').owlCarousel({
         stagePadding: 200,
         loop:true,
-        autoplay: true,
+        // autoplay: true,
         autoplayHoverPause: true,
         autoplaySpeed: 1000,
         margin:10,
