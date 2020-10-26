@@ -76,6 +76,13 @@
 .badge-color-one {
     background-color: #e94a54;
 }
+.btn-primary {
+    background-color: #5e72e4;
+    border-color: #5e72e4;
+}
+.text-primary {
+    color: #5e72e4!important;
+}
 .text-color-two {
     color: #9059a0;
 }
@@ -105,7 +112,7 @@
     padding: 14px;
     cursor: pointer;
 }
-.card:hover{
+.card-effects:hover{
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
@@ -114,6 +121,9 @@
 }
 .text-shadow {
     text-shadow: 2px 2px 0px #CECECE;
+}
+.bg-primary {
+    background-color: #5e72e4!important;
 }
 
 .item{

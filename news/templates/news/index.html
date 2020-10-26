@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+    {%  block content %}
+        <section id="intro">
+            <div class="intro-text">
+                <h2>{{ title }}</h2>
+                <a href="{% url 'home' %}" class="btn-get-started">Главная страница</a>
+                <a href="#" class="btn-get-started">{{ title }}</a>
+            </div>
+            <div class="container">
+                <div class="card shadow-lg">
+                        {% for i in news %}
+                            <div class="card card-effects shadow-sm m-3">
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        {% for j in image %}
+                                             {% if j.product_id == i.id %}
+                                                 <img alt="" src="{{ j.image.url }}" class="img-fluid rounded shadow-lg" width="100px">
+                                             {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                    <div class="col-md-11">
+                                        <h3>{{ i.title }}</h3>
+                                        <h6>{{ i.anons }}</h6>
+                                    </div>
+                                </div>
+                            <hr>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <button class="btn btn-danger btn-icon-only rounded-circle" type="button">
+                                             <span class="btn-inner--icon"><i class="fas fa-calendar-alt"></i></span>
+                                        </button>
+                                             <span class="btn-inner--text text-danger">{{ i.created_at|date:"d E Y" }}</span>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <a href="{{ i.get_absolute_url }}">
+                                            <span class="btn-inner--text text-primary">Подробнее</span>
+                                            <button class="btn btn-primary btn-icon-only rounded-circle" type="button">
+                                                 <span class="btn-inner--icon"><i class="fas fa-sign-in-alt"></i></span>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                </div>
+            </div>
+        </section>
+    {% endblock %}

@@ -32,12 +32,17 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'django.contrib.sites',
+    'django.contrib.flatpages',
+    'ckeditor',
+    'ckeditor_uploader',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
+    'news.apps.NewsConfig',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +128,5 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 CKEDITOR_UPLOAD_PATH = "uploads/"
+
+SITE_ID = 1

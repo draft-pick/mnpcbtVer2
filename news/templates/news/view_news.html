@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+    {%  block content %}
+        <section id="intro">
+            <div class="intro-text">
+                <h2>{{ news_item.title }}</h2>
+                <a href="{% url 'home' %}" class="btn-get-started">Главная страница</a>
+                <a href="#" class="btn-get-started">{{ news_item.title }}</a>
+            </div>
+        </section>
+    {% endblock %}
