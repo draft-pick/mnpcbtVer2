@@ -8,7 +8,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background: #fff;
+  background: #ced4da;
   color: #282a3b;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
@@ -167,12 +167,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#intro p {
-  color: #fff;
-  margin-bottom: 20px;
-  padding: 0 15px;
-  font-size: 24px;
-}
+/*#intro p {*/
+/*  color: #fff;*/
+/*  margin-bottom: 20px;*/
+/*  padding: 0 15px;*/
+/*  font-size: 24px;*/
+/*}*/
 
 @media (max-width: 768px) {
   #intro p {
