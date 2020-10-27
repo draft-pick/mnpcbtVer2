@@ -152,3 +152,25 @@ $(document).ready(function(){
         }
     });
 });
+
+    // Slider News
+$(document).ready(function(){
+  $('#slider-news').owlCarousel({
+        loop:true,
+        nav:true,
+        dots: false,
+        width: this.auto,
+        margin: this.auto,
+        responsive:{
+            0:{
+                items:2,
+            },
+            600:{
+                items:2,
+            },
+            1000:{
+                items:2,
+            }
+        }
+    });
+});

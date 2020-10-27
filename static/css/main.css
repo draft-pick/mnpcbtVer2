@@ -1,3 +1,7 @@
+ul {
+    padding: 0;
+    margin: 0;
+}
 .mt--100 {
     margin-top: -100px;
 }
@@ -250,7 +254,7 @@
 #breadcrumb li a {
   color: #FFF;
   display: block;
-  background: #3498db;
+  background: #ced4da;
   text-decoration: none;
   position: relative;
   height: 40px;
@@ -261,14 +265,14 @@
   font-size: 10px;
 }
 #breadcrumb li:nth-child(even) a {
-  background-color: #2980b9;
+  background-color: #ced4da;
 }
 #breadcrumb li:nth-child(even) a:before {
-  border-color: #2980b9;
+  border-color: #ced4da;
   border-left-color: transparent;
 }
 #breadcrumb li:nth-child(even) a:after {
-  border-left-color: #2980b9;
+  border-left-color: #ced4da;
 }
 #breadcrumb li:first-child a {
   padding-left: 15px;
@@ -292,7 +296,7 @@
   content: "";
   position: absolute;
   top: 0;
-  border: 0 solid #3498db;
+  border: 0 solid #ced4da;
   border-width: 20px 10px;
   width: 0;
   height: 0;
@@ -304,25 +308,5 @@
 #breadcrumb li a:after {
   left: 100%;
   border-color: transparent;
-  border-left-color: #3498db;
-}
-#breadcrumb li a:hover {
-  background-color: #1abc9c;
-}
-#breadcrumb li a:hover:before {
-  border-color: #1abc9c;
-  border-left-color: transparent;
-}
-#breadcrumb li a:hover:after {
-  border-left-color: #1abc9c;
-}
-#breadcrumb li a:active {
-  background-color: #16a085;
-}
-#breadcrumb li a:active:before {
-  border-color: #16a085;
-  border-left-color: transparent;
-}
-#breadcrumb li a:active:after {
-  border-left-color: #16a085;
+  border-left-color: #ced4da;
 }

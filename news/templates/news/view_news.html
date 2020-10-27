@@ -1,49 +1,52 @@
 {% extends 'base.html' %}
     {%  block content %}
         <section id="intro">
-            <div class="container">
-                <div class="card shadow-sm p-5">
-                    <ul id="breadcrumb">
-                  <li><a href="{% url 'home' %}"><i class="fas fa-home"></i></a></li>
-                  <li><a href="{% url 'news' %}"><i class="fas fa-file-alt"></i> Наши новости</a></li>
-                  <li><a href="#"><i class="fas fa-file-alt"></i> {{ title }}</a></li>
-                </ul>
-                    <h4>{{ news_item.title }}</h4>
-                    <div class="row">
-                        <div class="col-md-6">
-                          <button class="btn btn-icon btn-3 btn-success" type="button">
-                             <span class="btn-inner--icon"><i class="ni ni-calendar-grid-58"></i></span>
-                             <span class="btn-inner--text">{{ news_item.created_at|date:"d E Y" }}</span>
-                          </button>
+            <div class="intro-text text-left">
+                <div class="container">
+                    <div class="card shadow-sm p-5">
+                        <ul id="breadcrumb" class="mb-3">
+                            <li><a href="{% url 'home' %}"><i class="fas fa-home"></i></a></li>
+                            <li><a href="{% url 'news' %}"><i class="fas fa-file-alt"></i> Наши новости</a></li>
+                            <li><a href="#"><i class="fas fa-file-alt"></i> {{ title }}</a></li>
+                        </ul>
+                        <h4>{{ news_item.title }}</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                              <button class="btn btn-icon btn-3 btn-success" type="button">
+                                 <span class="btn-inner--icon"><i class="ni ni-calendar-grid-58"></i></span>
+                                 <span class="btn-inner--text">{{ news_item.created_at|date:"d E Y" }}</span>
+                              </button>
+                            </div>
+                            <div class="col-md-6 text-right">
+                              <button class="btn btn-lg btn-facebook btn-icon-only rounded-circle" type="button">
+                                <span class="btn-inner--icon"><i class="fa fa-facebook-square"></i></span>
+                              </button>
+                              <button class="btn btn-lg btn-twitter btn-icon-only rounded-circle" type="button">
+                                <span class="btn-inner--icon"><i class="fa fa-twitter"></i></span>
+                              </button>
+                              <button class="btn btn-lg btn-vk btn-icon-only rounded-circle" type="button">
+                                <span class="btn-inner--icon"><i class="fa fa-vk"></i></span>
+                              </button>
+                              <button class="btn btn-lg btn-ok btn-icon-only rounded-circle" type="button">
+                                <span class="btn-inner--icon"><i class="fa fa-odnoklassniki"></i></span>
+                              </button>
+                          </div>
                         </div>
-                        <div class="col-md-6 text-right">
-                          <button class="btn btn-lg btn-facebook btn-icon-only rounded-circle" type="button">
-                            <span class="btn-inner--icon"><i class="fa fa-facebook-square"></i></span>
-                          </button>
-                          <button class="btn btn-lg btn-twitter btn-icon-only rounded-circle" type="button">
-                            <span class="btn-inner--icon"><i class="fa fa-twitter"></i></span>
-                          </button>
-                          <button class="btn btn-lg btn-vk btn-icon-only rounded-circle" type="button">
-                            <span class="btn-inner--icon"><i class="fa fa-vk"></i></span>
-                          </button>
-                          <button class="btn btn-lg btn-ok btn-icon-only rounded-circle" type="button">
-                            <span class="btn-inner--icon"><i class="fa fa-odnoklassniki"></i></span>
-                          </button>
-                      </div>
+                        <hr>
+                        {{ news_item.content }}
+                        <div class="carousel-wrap">
+                            <div class="owl-carousel owl-theme" id="slider-news">
+                                {% for j in image %}
+                                    <div class="item"><a href="{{ j.image.url }}" data-fancybox="example_group" data-caption="Заголовок">
+                                        <img src="{{ j.image.url }}" alt=""></a></div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                      <button class="btn btn-lg btn-warning btn-icon-only rounded-circle m-3" type="button" onclick="history.back();">
+                        <span class="btn-inner--icon"><i class="fas fa-reply-all"></i></span>
+                      </button>
                     </div>
-                    {{ news_item.content }}
-                    <div class="carousel-wrap">
-                                <div class="owl-carousel owl-theme" id="slider-mm">
-                                    {% for j in image %}
-                                        <div class="item"><a href="{{ j.image.url }}" data-fancybox="example_group" data-caption="Заголовок">
-                                            <img src="{{ j.image.url }}" alt=""></a></div>
-                                    {% endfor %}
-                                </div>
-                    </div>
-                  <button class="btn btn-lg btn-warning btn-icon-only rounded-circle m-3" type="button" onclick="history.back();">
-                    <span class="btn-inner--icon"><i class="fas fa-reply-all"></i></span>
-                  </button>
                 </div>
-            </div>
+        </div>
         </section>
     {% endblock %}
